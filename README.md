@@ -14,4 +14,6 @@ voter_sitewide.ipynb has graphs for the data taken from this link https://api.we
 
 daily_sitewide.ipynb has graphs for the data taken from this link https://api.wevoteusa.org/apis/v1/docs/sitewideDailyMetricsSyncOut/
 
+analyticsActionSyncOut.ipynb has graphs for the data taken from this link https://api.wevoteusa.org/apis/v1/docs/analyticsActionSyncOut/
+
 
