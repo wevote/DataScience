@@ -12,6 +12,6 @@ The file contains code cells which need to be run to get the graphs as an output
 voter_sitewide.ipynb has graphs for the data taken from this link https://api.wevoteusa.org/apis/v1/docs/sitewideVoterMetricsSyncOut/
 
 
-daily_sitewide.ipynb has graphs for the data taken from this linkh https://api.wevoteusa.org/apis/v1/docs/sitewideDailyMetricsSyncOut/
+daily_sitewide.ipynb has graphs for the data taken from this link https://api.wevoteusa.org/apis/v1/docs/sitewideDailyMetricsSyncOut/
 
 
