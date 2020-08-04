@@ -1,0 +1,1105 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0525.1210                               -->
+<workbook original-version='18.1' source-build='2020.2.1 (20202.20.0525.1210)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='elec' inline='true' name='federated.1vmfau314d0o0p1a592qp15g4o78' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='elec' name='semistructpassivestore-direct.0jfntac0ht309y19lcqp60u6czks'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/sjais/Downloads' filename='elec.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[elec.json+]'>
+                  <map key='ballot_location_list' value='true' />
+                  <map key='ballot_location_list.Value' value='true' />
+                  <map key='state_code_list' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+                <semistruct-schema table='[elec.json]'>
+                  <map key='ballot_location_list' value='false' />
+                  <map key='ballot_location_list.Value' value='false' />
+                  <map key='state_code_list' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='elec.json+' type='union'>
+          <columns>
+            <column datatype='string' name='Table Name' />
+            <column datatype='integer' name='Document Index (generated)' />
+            <column datatype='integer' name='ballot_location_list.Index (generated)' />
+            <column datatype='string' name='ballot_location_list.Value.ballot_location_display_name' />
+            <column datatype='real' name='ballot_location_list.Value.ballot_location_order' />
+            <column datatype='string' name='ballot_location_list.Value.ballot_location_shortcut' />
+            <column datatype='string' name='ballot_location_list.Value.ballot_returned_we_vote_id' />
+            <column datatype='real' name='ballot_location_list.Value.google_civic_election_id' />
+            <column datatype='string' name='ballot_location_list.Value.polling_location_we_vote_id' />
+            <column datatype='string' name='ballot_location_list.Value.text_for_map_search' />
+            <column datatype='string' name='election_day_text' />
+            <column datatype='boolean' name='election_is_upcoming' />
+            <column datatype='string' name='election_name' />
+            <column datatype='string' name='get_election_state' />
+            <column datatype='real' name='google_civic_election_id' />
+            <column datatype='string' name='ocd_division_id' />
+            <column datatype='string' name='state_code' />
+            <column datatype='integer' name='state_code_list.Index (generated)' />
+            <column datatype='string' name='state_code_list.Value' />
+          </columns>
+          <relation connection='semistructpassivestore-direct.0jfntac0ht309y19lcqp60u6czks' name='elec.json' table='[elec.json]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='elec.json+' type='union'>
+          <columns>
+            <column datatype='string' name='Table Name' />
+            <column datatype='integer' name='Document Index (generated)' />
+            <column datatype='integer' name='ballot_location_list.Index (generated)' />
+            <column datatype='string' name='ballot_location_list.Value.ballot_location_display_name' />
+            <column datatype='real' name='ballot_location_list.Value.ballot_location_order' />
+            <column datatype='string' name='ballot_location_list.Value.ballot_location_shortcut' />
+            <column datatype='string' name='ballot_location_list.Value.ballot_returned_we_vote_id' />
+            <column datatype='real' name='ballot_location_list.Value.google_civic_election_id' />
+            <column datatype='string' name='ballot_location_list.Value.polling_location_we_vote_id' />
+            <column datatype='string' name='ballot_location_list.Value.text_for_map_search' />
+            <column datatype='string' name='election_day_text' />
+            <column datatype='boolean' name='election_is_upcoming' />
+            <column datatype='string' name='election_name' />
+            <column datatype='string' name='get_election_state' />
+            <column datatype='real' name='google_civic_election_id' />
+            <column datatype='string' name='ocd_division_id' />
+            <column datatype='string' name='state_code' />
+            <column datatype='integer' name='state_code_list.Index (generated)' />
+            <column datatype='string' name='state_code_list.Value' />
+          </columns>
+          <relation connection='semistructpassivestore-direct.0jfntac0ht309y19lcqp60u6czks' name='elec.json' table='[elec.json]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Document Index (generated)]' value='[elec.json+].[Document Index (generated)]' />
+          <map key='[Table Name]' value='[elec.json+].[Table Name]' />
+          <map key='[ballot_location_display_name]' value='[elec.json+].[ballot_location_list.Value.ballot_location_display_name]' />
+          <map key='[ballot_location_list Index (generated)]' value='[elec.json+].[ballot_location_list.Index (generated)]' />
+          <map key='[ballot_location_order]' value='[elec.json+].[ballot_location_list.Value.ballot_location_order]' />
+          <map key='[ballot_location_shortcut]' value='[elec.json+].[ballot_location_list.Value.ballot_location_shortcut]' />
+          <map key='[ballot_returned_we_vote_id]' value='[elec.json+].[ballot_location_list.Value.ballot_returned_we_vote_id]' />
+          <map key='[election_day_text]' value='[elec.json+].[election_day_text]' />
+          <map key='[election_is_upcoming]' value='[elec.json+].[election_is_upcoming]' />
+          <map key='[election_name]' value='[elec.json+].[election_name]' />
+          <map key='[get_election_state]' value='[elec.json+].[get_election_state]' />
+          <map key='[google_civic_election_id (ballot_location_list)]' value='[elec.json+].[ballot_location_list.Value.google_civic_election_id]' />
+          <map key='[google_civic_election_id]' value='[elec.json+].[google_civic_election_id]' />
+          <map key='[ocd_division_id]' value='[elec.json+].[ocd_division_id]' />
+          <map key='[polling_location_we_vote_id]' value='[elec.json+].[ballot_location_list.Value.polling_location_we_vote_id]' />
+          <map key='[state_code]' value='[elec.json+].[state_code]' />
+          <map key='[state_code_list Index (generated)]' value='[elec.json+].[state_code_list.Index (generated)]' />
+          <map key='[state_code_list]' value='[elec.json+].[state_code_list.Value]' />
+          <map key='[text_for_map_search]' value='[elec.json+].[ballot_location_list.Value.text_for_map_search]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ballot_location_list Index (generated)]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Value.ballot_location_display_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ballot_location_display_name]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Value.ballot_location_display_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Value.ballot_location_order</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ballot_location_order]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Value.ballot_location_order</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Value.ballot_location_shortcut</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ballot_location_shortcut]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Value.ballot_location_shortcut</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Value.ballot_returned_we_vote_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ballot_returned_we_vote_id]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Value.ballot_returned_we_vote_id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Value.google_civic_election_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[google_civic_election_id (ballot_location_list)]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Value.google_civic_election_id</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Value.polling_location_we_vote_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[polling_location_we_vote_id]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Value.polling_location_we_vote_id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballot_location_list.Value.text_for_map_search</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[text_for_map_search]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ballot_location_list.Value.text_for_map_search</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>election_day_text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[election_day_text]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>election_day_text</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>election_is_upcoming</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[election_is_upcoming]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>election_is_upcoming</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>election_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[election_name]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>election_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>get_election_state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[get_election_state]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>get_election_state</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>google_civic_election_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[google_civic_election_id]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>google_civic_election_id</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ocd_division_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ocd_division_id]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>ocd_division_id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state_code]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>state_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_code_list.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_code_list Index (generated)]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>state_code_list.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_code_list.Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state_code_list]</local-name>
+            <parent-name>[elec.json+]</parent-name>
+            <remote-alias>state_code_list.Value</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[elec.json_712DFF09217C4147B0826A0A728BF4F2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' is-auto-gen-lod-field='true' name='[Ballot Location Order per ballot location list]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)],[ballot_location_list Index (generated)] : MAX([ballot_location_order]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at ballot_location_list level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='count elec' datatype='integer' name='[Calculation_1291688676308152320]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([election_name])' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per ballot location list]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)] : COUNTD([ballot_location_list Index (generated)]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at ballot_location_list level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per elec.json+]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at elec.json+ level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per state code list]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)] : COUNTD([state_code_list Index (generated)]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at state_code_list level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Table Name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Table Name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='elec.json' datatype='table' name='[__tableau_internal_object_id__].[elec.json_712DFF09217C4147B0826A0A728BF4F2]' role='measure' type='quantitative' />
+      <column caption='Ballot Location Display Name' datatype='string' name='[ballot_location_display_name]' role='dimension' semantic-role='' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Value.ballot_location_display_name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='ballot location list Index (generated)' datatype='integer' name='[ballot_location_list Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ballot Location Order' datatype='real' name='[ballot_location_order]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Value.ballot_location_order</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ballot Location Shortcut' datatype='string' name='[ballot_location_shortcut]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Value.ballot_location_shortcut</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ballot Returned We Vote Id' datatype='string' name='[ballot_returned_we_vote_id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Value.ballot_returned_we_vote_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Election Day Text' datatype='date' datatype-customized='true' name='[election_day_text]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>election_day_text</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Election Is Upcoming' datatype='boolean' name='[election_is_upcoming]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>election_is_upcoming</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Election Name' datatype='string' name='[election_name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>election_name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Get Election State' datatype='string' name='[get_election_state]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>get_election_state</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Google Civic Election Id (Ballot Location List)' datatype='real' name='[google_civic_election_id (ballot_location_list)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Value.google_civic_election_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Google Civic Election Id' datatype='real' name='[google_civic_election_id]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>google_civic_election_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ocd Division Id' datatype='string' name='[ocd_division_id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ocd_division_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Polling Location We Vote Id' datatype='string' name='[polling_location_we_vote_id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Value.polling_location_we_vote_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='State Code' datatype='string' name='[state_code]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>state_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='state code list Index (generated)' datatype='integer' datatype-customized='true' default-format='*000' name='[state_code_list Index (generated)]' role='dimension' semantic-role='[State].[Name]' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>state_code_list.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='State Code List' datatype='string' name='[state_code_list]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>state_code_list.Value</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Text For Map Search' datatype='string' name='[text_for_map_search]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>ballot_location_list.Value.text_for_map_search</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Ballot Location List' role='dimensions'>
+        <folder-item name='[ballot_location_display_name]' type='field' />
+        <folder-item name='[ballot_location_list Index (generated)]' type='field' />
+        <folder-item name='[ballot_location_shortcut]' type='field' />
+        <folder-item name='[ballot_returned_we_vote_id]' type='field' />
+        <folder-item name='[google_civic_election_id (ballot_location_list)]' type='field' />
+        <folder-item name='[polling_location_we_vote_id]' type='field' />
+        <folder-item name='[text_for_map_search]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Elec' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[Table Name]' type='field' />
+        <folder-item name='[election_day_text]' type='field' />
+        <folder-item name='[election_is_upcoming]' type='field' />
+        <folder-item name='[election_name]' type='field' />
+        <folder-item name='[get_election_state]' type='field' />
+        <folder-item name='[google_civic_election_id]' type='field' />
+        <folder-item name='[ocd_division_id]' type='field' />
+        <folder-item name='[state_code]' type='field' />
+        <folder-item name='[state_code_list Index (generated)]' type='field' />
+        <folder-item name='[state_code_list]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Source Measures' role='measures'>
+        <folder-item name='[ballot_location_order]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Ballot Location List'>
+          <folder-item name='[ballot_location_display_name]' type='field' />
+          <folder-item name='[ballot_location_list Index (generated)]' type='field' />
+          <folder-item name='[ballot_location_shortcut]' type='field' />
+          <folder-item name='[ballot_returned_we_vote_id]' type='field' />
+          <folder-item name='[google_civic_election_id (ballot_location_list)]' type='field' />
+          <folder-item name='[polling_location_we_vote_id]' type='field' />
+          <folder-item name='[text_for_map_search]' type='field' />
+        </folder>
+        <folder name='Elec'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[Table Name]' type='field' />
+          <folder-item name='[election_day_text]' type='field' />
+          <folder-item name='[election_is_upcoming]' type='field' />
+          <folder-item name='[election_name]' type='field' />
+          <folder-item name='[get_election_state]' type='field' />
+          <folder-item name='[google_civic_election_id]' type='field' />
+          <folder-item name='[ocd_division_id]' type='field' />
+          <folder-item name='[state_code]' type='field' />
+          <folder-item name='[state_code_list Index (generated)]' type='field' />
+          <folder-item name='[state_code_list]' type='field' />
+        </folder>
+        <folder name='Source Measures'>
+          <folder-item name='[ballot_location_order]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='321' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='elec.json' id='elec.json_712DFF09217C4147B0826A0A728BF4F2'>
+            <properties context=''>
+              <relation all='true' name='elec.json+' type='union'>
+                <columns>
+                  <column datatype='string' name='Table Name' />
+                  <column datatype='integer' name='Document Index (generated)' />
+                  <column datatype='integer' name='ballot_location_list.Index (generated)' />
+                  <column datatype='string' name='ballot_location_list.Value.ballot_location_display_name' />
+                  <column datatype='real' name='ballot_location_list.Value.ballot_location_order' />
+                  <column datatype='string' name='ballot_location_list.Value.ballot_location_shortcut' />
+                  <column datatype='string' name='ballot_location_list.Value.ballot_returned_we_vote_id' />
+                  <column datatype='real' name='ballot_location_list.Value.google_civic_election_id' />
+                  <column datatype='string' name='ballot_location_list.Value.polling_location_we_vote_id' />
+                  <column datatype='string' name='ballot_location_list.Value.text_for_map_search' />
+                  <column datatype='string' name='election_day_text' />
+                  <column datatype='boolean' name='election_is_upcoming' />
+                  <column datatype='string' name='election_name' />
+                  <column datatype='string' name='get_election_state' />
+                  <column datatype='real' name='google_civic_election_id' />
+                  <column datatype='string' name='ocd_division_id' />
+                  <column datatype='string' name='state_code' />
+                  <column datatype='integer' name='state_code_list.Index (generated)' />
+                  <column datatype='string' name='state_code_list.Value' />
+                </columns>
+                <relation connection='semistructpassivestore-direct.0jfntac0ht309y19lcqp60u6czks' name='elec.json' table='[elec.json]' type='table' />
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Elections over the Years'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='elec' name='federated.1vmfau314d0o0p1a592qp15g4o78' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vmfau314d0o0p1a592qp15g4o78'>
+            <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>Document Index (generated)</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per elec.json+]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+              <desc>
+                <formatted-text>
+                  <run>A calculated measure that is at elec.json+ level of detail</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Election Day Text' datatype='date' datatype-customized='true' name='[election_day_text]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>election_day_text</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Number of Records per elec.json+]' derivation='User' name='[usr:Number of Records per elec.json+:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[election_day_text]' derivation='Year' name='[yr:election_day_text:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1vmfau314d0o0p1a592qp15g4o78].[usr:Number of Records per elec.json+:qk]</rows>
+        <cols>[federated.1vmfau314d0o0p1a592qp15g4o78].[yr:election_day_text:ok]</cols>
+      </table>
+      <simple-id uuid='{81981448-6C41-447C-BA1B-39BE3CE53F76}' />
+    </worksheet>
+    <worksheet name='State wise elections'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='elec' name='federated.1vmfau314d0o0p1a592qp15g4o78' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1vmfau314d0o0p1a592qp15g4o78'>
+            <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>Document Index (generated)</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per elec.json+]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+              <desc>
+                <formatted-text>
+                  <run>A calculated measure that is at elec.json+ level of detail</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[state_code_list]' derivation='None' name='[none:state_code_list:nk]' pivot='key' type='nominal' />
+            <column caption='State Code List' datatype='string' name='[state_code_list]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>state_code_list.Value</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Number of Records per elec.json+]' derivation='User' name='[usr:Number of Records per elec.json+:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1vmfau314d0o0p1a592qp15g4o78].[Longitude (generated)]' field-type='quantitative' max='33429321.578900766' min='18460486.477037728' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1vmfau314d0o0p1a592qp15g4o78].[Latitude (generated)]' field-type='quantitative' max='10550303.531777043' min='1795176.988645588' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1vmfau314d0o0p1a592qp15g4o78].[none:state_code_list:nk]' />
+              <color column='[federated.1vmfau314d0o0p1a592qp15g4o78].[usr:Number of Records per elec.json+:qk]' />
+              <text column='[federated.1vmfau314d0o0p1a592qp15g4o78].[none:state_code_list:nk]' />
+              <text column='[federated.1vmfau314d0o0p1a592qp15g4o78].[usr:Number of Records per elec.json+:qk]' />
+              <geometry column='[federated.1vmfau314d0o0p1a592qp15g4o78].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vmfau314d0o0p1a592qp15g4o78].[Latitude (generated)]</rows>
+        <cols>[federated.1vmfau314d0o0p1a592qp15g4o78].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8CB3C04F-E44F-4506-9921-722AA5BCAD68}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Elections over the Years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vmfau314d0o0p1a592qp15g4o78].[mn:election_day_text:ok]</field>
+            <field>[federated.1vmfau314d0o0p1a592qp15g4o78].[qr:election_day_text:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A9BF9638-1EEC-4A88-801B-87AB0700BA8F}' />
+    </window>
+    <window class='worksheet' name='State wise elections'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1vmfau314d0o0p1a592qp15g4o78].[usr:Number of Records per elec.json+:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vmfau314d0o0p1a592qp15g4o78].[none:state_code_list:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C66D8392-4A3E-48BB-B8F6-2D09A79FC0C3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Elections over the Years' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='State wise elections' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
