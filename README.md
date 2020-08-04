@@ -11,9 +11,11 @@ The file contains code cells which need to be run to get the graphs as an output
 
 voter_sitewide.ipynb has graphs for the data taken from this link https://api.wevoteusa.org/apis/v1/docs/sitewideVoterMetricsSyncOut/
 
-
 daily_sitewide.ipynb has graphs for the data taken from this link https://api.wevoteusa.org/apis/v1/docs/sitewideDailyMetricsSyncOut/
 
 analyticsActionSyncOut.ipynb has graphs for the data taken from this link https://api.wevoteusa.org/apis/v1/docs/analyticsActionSyncOut/
 
-
+issues_description.ipynb has the code for the graph of issue_description.json file
+issue_decription.json has been downloaded from the link https://api.wevoteusa.org/apis/v1/docs/issueDescriptionsRetrieve/
+To run the json file, first download the file from the link and edit the json file.
+remove the {"status": "ISSUES_RETRIEVED", "success": true, "issue_list": from thr start and } from the end.
