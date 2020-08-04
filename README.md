@@ -17,5 +17,10 @@ analyticsActionSyncOut.ipynb has graphs for the data taken from this link https:
 
 issues_description.ipynb has the code for the graph of issue_description.json file
 issue_decription.json has been downloaded from the link https://api.wevoteusa.org/apis/v1/docs/issueDescriptionsRetrieve/
-To run the json file, first download the file from the link and edit the json file.
+First download the file from the link and edit the json file.
 remove the {"status": "ISSUES_RETRIEVED", "success": true, "issue_list": from the start and } from the end.
+
+elections_retrieve.twb is a tableau file which has graphs of elec.json
+elec.json has been downloaded from the link https://api.wevoteusa.org/apis/v1/electionsRetrieve/
+First download the file from the link and edit the json file.
+remove the  {"status": "", "success": true, "election_list":  from the start and } from the end.
